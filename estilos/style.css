@@ -1,0 +1,29 @@
+@charset "UTF-8";
+:root{
+    --cor0: #9da5b2;
+    --cor1: #80817c;
+    --cor2: #231f1c;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor0);
+}
+main{
+    background-color: var(--cor1);
+    margin: 10px;
+}
+section{
+    display: inline-block;
+    position: center;
+}
+#imagem{
+    width: auto;
+}
+div > img{
+
+    width: 400px;
+}
