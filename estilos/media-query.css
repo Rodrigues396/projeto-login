@@ -18,7 +18,18 @@
         width: 70%;
         height: 50%;
     }
+    div#formulario > p{
+        margin-bottom: 20px;
+    }
+    div.campo > input{
+        font-size: 1.2em;
+    }
+    div#formulario{
+        margin-top: 90px;
+    }
     
+
+ 
 }
 @media screen and (min-width: 992px) {
     body{
@@ -37,10 +48,19 @@
         float: left;
         width: 50%;
     }
+
     div#formulario > h1{
         font-size: 2em;
     }
     div#formulario > p{
         font-size: 1.2em;
+        margin-bottom: 10px;
     }
+    div.campo > input{
+        font-size: 1.5em;
+    }
+    div#formulario{
+        margin-top: 90px;
+    }
+    
 }
