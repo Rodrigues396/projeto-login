@@ -3,27 +3,47 @@
     --cor0: #9da5b2;
     --cor1: #80817c;
     --cor2: #231f1c;
+    --cor3: #9da5b281;
 }
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
-body{
+body, html{
     background-color: var(--cor0);
+    width: 100vw;
+    height: 100vh;
 }
 main{
-    background-color: var(--cor1);
-    margin: 10px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-section{
-    display: inline-block;
-    position: center;
-}
-#imagem{
-    width: auto;
-}
-div > img{
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 
-    width: 400px;
+    background-color: var(--cor1);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+section#login > div#imagem{
+    display: block;
+    background: rgb(0, 0, 0) url(../imagens/img-vitro.jpg) no-repeat;
+    background-size: cover;
+    height:  200px;    
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
 }
